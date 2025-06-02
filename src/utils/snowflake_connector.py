@@ -23,9 +23,9 @@ def connect_to_snowflake():
     """
     try:
         conn = snowflake.connector.connect(
-            account="LIWMMZJ-VEB56136",
-            user="AWSUSER",
-            password="S3sairam21$1234",
+            account=SNOWFLAKE_ACCOUNT,
+            user=SNOWFLAKE_USER,
+            password=SNOWFLAKE_PASSWORD,
             warehouse=SNOWFLAKE_WAREHOUSE,
             role=SNOWFLAKE_ROLE
         )
